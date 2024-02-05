@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ngdemo3/pages/drawer_page.dart';
 import 'package:ngdemo3/pages/gridview_page.dart';
 import 'package:ngdemo3/pages/home_page.dart';
+import 'package:ngdemo3/pages/listview_page.dart';
 import 'package:ngdemo3/pages/scrolview_page.dart';
 import 'package:ngdemo3/pages/tabbarview_page.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home:  TapBarView(),
+      home:  ListViewPage(),
     );
   }
 }

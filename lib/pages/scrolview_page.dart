@@ -23,11 +23,19 @@ class _ScrolviewPageState extends State<ScrolviewPage> {
               height: 250,
             ),
             Container(
-              color:Colors.red,
+              color:Colors.blue,
               height: 250,
             ),
             Container(
-              color:Colors.red,
+              color:Colors.amber,
+              height: 250,
+            ),
+            Container(
+              color:Colors.white,
+              height: 250,
+            ),
+            Container(
+              color:Colors.deepPurple,
               height: 250,
             ),
           ],

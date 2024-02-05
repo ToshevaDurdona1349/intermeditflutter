@@ -1,38 +1,49 @@
 import 'package:flutter/material.dart';
-// ListViewda ko'p datalarni berish uchun muhum
-class LidstViewage extends StatefulWidget {
-  const LidstViewage({super.key});
+
+class ListViewPage extends StatefulWidget {
+  const ListViewPage({super.key});
 
   @override
-  State<LidstViewage> createState() => _LidstViewageState();
+  State<ListViewPage> createState() => _ListViewPageState();
 }
 
-class _LidstViewageState extends State<LidstViewage> {
+class _ListViewPageState extends State<ListViewPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         title: Text("List View"),
       ),
       body: ListView(
         children: [
-          _itemList(title: "Xurshidbek",image:"assets/image.jpeg"),
-          _itemList(title: "Xursand",image:"assets/img.png"),
+          _itemList(title: "Xurshidbek",image: "assets/image.jpg"),
+          _itemList(title: "Begzodbek",image: "assets/img.png"),
+          _itemList(title: "Sherzodbek",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
+          _itemList(title: "Firdavs",image: "assets/image.jpg"),
         ],
       ),
     );
   }
-  Widget _itemList({title,image}){
+
+  Widget _itemList({title, image}){
     return Container(
-      padding: EdgeInsets.all(18),
+      padding: EdgeInsets.all(20),
       child: Row(
         children: [
-          image(
-            width:70,
-            height:70,
-            fit:BoxFit.cover,
-            image:AssetImage(image),
+          Image(
+            width: 70,
+            height: 70,
+            fit: BoxFit.cover,
+            image: AssetImage(image),
           ),
           SizedBox(width: 10,),
           Text(title)
